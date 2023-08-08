@@ -7,6 +7,6 @@ def pow(a, b):
     else:
         i = b
         while i < 0:
-            result /= 10
+            result /= a
             i += 1
     return result
