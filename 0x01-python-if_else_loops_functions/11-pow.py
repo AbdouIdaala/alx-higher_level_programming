@@ -5,8 +5,6 @@ def pow(a, b):
         for i in range(b):
             result *= a
     else:
-        i = b
-        while i < 0:
+        for i in range(-b):
             result /= a
-            i += 1
     return result
