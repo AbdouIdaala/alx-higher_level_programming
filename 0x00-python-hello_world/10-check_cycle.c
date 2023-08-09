@@ -13,7 +13,7 @@ int check_cycle(listint_t *list)
 
 	if (temp1)
 	{
-		temp2 = list->next;
+		temp2 = temp1->next;
 		while (temp2)
 		{
 			if (temp2 == list || temp2 == temp1->next)
