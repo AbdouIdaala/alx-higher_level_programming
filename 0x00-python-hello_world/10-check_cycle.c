@@ -11,7 +11,7 @@ int check_cycle(listint_t *list)
 	listint_t *temp1 = list;
 	listint_t *temp2 = list->next;
 
-	if (temp1 == NULL)
+	if (temp2 == NULL)
 		return (0);
 
 	while (temp1 && temp2)
