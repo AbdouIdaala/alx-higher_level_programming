@@ -13,11 +13,18 @@ listint_t *insert_node(listint_t **head, int number)
 
     if (!new)
         return (NULL);
-    if ((*head)->n > number)
+    new->n = number;
+    if (!(*head)->next)
     {
-        new->n = number;
         new->next = *head;
         *head = new;
     }
+    /*
+    if ((*head)->n > number)
+    {
+        new->next = *head;
+        *head = new;
+    }
+    */
     return (new);
 }
