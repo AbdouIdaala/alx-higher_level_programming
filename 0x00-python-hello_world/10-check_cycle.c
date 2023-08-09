@@ -16,6 +16,8 @@ int check_cycle(listint_t *list)
 		temp2 = temp1->next;
 		while (temp2)
 		{
+			if (temp2 == list)
+				return (1);
 			if (temp2 == temp1 || temp2 == temp1->next)
 				return (1);
 			temp1 = temp1->next;
