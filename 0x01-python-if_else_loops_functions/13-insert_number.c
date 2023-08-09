@@ -10,7 +10,7 @@
 listint_t *insert_node(listint_t **head, int number)
 {
     listint_t *new = malloc(sizeof(listint_t));
-    listint_t *temp, *track;
+    listint_t *temp;
 
     if (!new)
         return (NULL);
@@ -24,11 +24,10 @@ listint_t *insert_node(listint_t **head, int number)
     temp = *head;
     while (temp)
     {
-        track = temp->next->next;
-        if (number < track->n)
+        if (number < temp->n)
         {
-            new->next = temp;
-            temp = new;
+            new->next = temp->next;
+            temp->next = new;
             return (new);
         }
         temp = temp->next;
