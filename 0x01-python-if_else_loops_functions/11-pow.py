@@ -6,5 +6,9 @@ def pow(a, b):
             result *= a
     else:
         for i in range(-b):
-            result /= a
+            result *= a
+        result = 1 / result
     return result
+
+
+print(pow(-98, -10))
