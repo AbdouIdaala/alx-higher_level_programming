@@ -11,18 +11,11 @@ int check_cycle(listint_t *list)
 	listint_t *temp1 = list;
 	listint_t *temp2 = list->next;
 
-	if (!list)
-	{
-		free(temp1);
-		free(temp2);
-		return (0);
-	}
-
 	while (temp1 && temp2)
 	{
 		temp1 = temp1->next;
 		temp2 = temp2->next;
-		if (temp2 == list)
+		if (temp2 == temp1)
 			return (1);
 	}
 	return (0);
