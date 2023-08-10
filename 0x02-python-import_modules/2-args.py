@@ -3,11 +3,12 @@ import sys
 
 if __name__ == "__main__":
     argv = sys.argv
-    if len(argv) == 1:
-        print("0 arguments.")
-    else:
-        print("{} arguments:".format(len(argv) - 1))
+    length = len(argv)
+    if length > 1:
+        print("{} arguments:".format(length - 1))
         i = 1
-        while i < len(argv):
+        while i < length:
             print("{}: {}".format(i, argv[i]))
             i += 1
+    else:
+        print("0 arguments.")
