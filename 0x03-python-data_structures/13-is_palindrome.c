@@ -9,35 +9,38 @@ int is_palindrome(listint_t **head)
 {
     listint_t *temp, *temp1, *first, *second, *head1;
 
-    if (!(*head)->next)
-        return (1);
-    first = *head;
-    second = *head;
-    while (1)
+    if (!(*head))
+        return (0);
+    if ((*head)->next)
     {
-        second = second->next->next;
-        if (second == NULL)
+        first = *head;
+        second = *head;
+        while (1)
         {
-            head1 = first->next;
-            first->next = NULL;
-            break;
+            second = second->next->next;
+            if (second == NULL)
+            {
+                head1 = first->next;
+                first->next = NULL;
+                break;
+            }
+            if (second->next == NULL)
+            {
+                head1 = first->next->next;
+                first->next = NULL;
+                break;
+            }
+            first = first->next;
         }
-        if (second->next == NULL)
+        temp1 = reverse_listint(&head1);
+        temp = *head;
+        while (temp1 && temp)
         {
-            head1 = first->next->next;
-            first->next = NULL;
-            break;
+            if (temp1->n != temp->n)
+                return (0);
+            temp1 = temp1->next;
+            temp = temp->next;
         }
-        first = first->next;
-    }
-    temp1 = reverse_listint(&head1);
-    temp = *head;
-    while (temp1 && temp)
-    {
-        if (temp1->n != temp->n)
-            return (0);
-        temp1 = temp1->next;
-        temp = temp->next;
     }
     return (1);
 }
