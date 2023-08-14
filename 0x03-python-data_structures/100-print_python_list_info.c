@@ -1,7 +1,7 @@
 #include <stdio.h>
-#include <Python.h>
-#include <listobject.h>
-#include <object.h>
+#include <python3.10/Python.h>
+#include <python3.10/listobject.h>
+#include <python3.10/object.h>
 
 void print_python_list_info(PyObject *p)
 {
