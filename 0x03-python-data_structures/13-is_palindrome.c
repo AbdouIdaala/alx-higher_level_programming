@@ -9,9 +9,7 @@ int is_palindrome(listint_t **head)
 {
     listint_t *temp, *temp1, *first, *second, *head1;
 
-    if (!(*head))
-        return (1);
-    if ((*head)->next)
+    if ((*head)->next && !(*head))
     {
         first = *head;
         second = *head;
