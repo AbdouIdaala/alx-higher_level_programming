@@ -44,7 +44,7 @@ def dictionary():
 
 
 def roman_to_int(roman_string):
-    if not isinstance(roman_string, str):
+    if not isinstance(roman_string, str) or roman_string == None:
         return 0
     reference = dictionary()
     result = 0
