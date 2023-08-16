@@ -44,17 +44,16 @@ def dictionary():
 
 
 def roman_to_int(roman_string):
-    if roman_string:
-        if not isinstance(roman_string, str):
-            return 0
-        reference = dictionary()
-        result = 0
-        for dic in reference:
-            for key, value in dic.items():
-                if key == roman_string:
-                    return value
-                else:
-                    for c in roman_string:
-                        if c == key:
-                            result += value
-        return result
+    if not isinstance(roman_string, str):
+        return 0
+    reference = dictionary()
+    result = 0
+    for dic in reference:
+        for key, value in dic.items():
+            if key == roman_string:
+                return value
+            else:
+                for c in roman_string:
+                    if c == key:
+                        result += value
+    return result
