@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""_summary_
+"""My first square
 """
 
 
 class Square:
-    """_summary_
+    """An empty class Square that defines a square
     """
     pass
