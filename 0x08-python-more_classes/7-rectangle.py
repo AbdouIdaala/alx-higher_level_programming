@@ -100,7 +100,7 @@ class Rectangle:
         else:
             for i in range(self.__height):
                 for j in range(self.__width):
-                    full_str += self.print_symbol
+                    full_str += Rectangle.print_symbol
                 full_str += '\n'
         return full_str
 
