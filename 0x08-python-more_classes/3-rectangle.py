@@ -85,6 +85,12 @@ class Rectangle:
         return (self.__width + self.__height) * 2
 
     def __str__(self):
+        """Print the rectangle with the character '#'
+
+        Returns:
+            str: empty string if width or height == 0,\
+                otherwise the rectangle with '#' character
+        """
         full_str = ""
         if not self.__width or not self.__height:
             return ''
