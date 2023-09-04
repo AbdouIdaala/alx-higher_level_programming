@@ -108,4 +108,4 @@ class Rectangle:
             str: string representation of the rectangle to be able to \
                 recreate a new instance by using eval()
         """
-        return "Rectangle({}, {})".format(self.__width, self.__height)
+        return f"{self.__class__.__name__}({self.__width}, {self.__height})"
