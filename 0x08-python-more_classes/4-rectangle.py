@@ -102,4 +102,10 @@ class Rectangle:
         return full_str
 
     def __repr__(self):
+        """A string representation of the rectangle
+
+        Returns:
+            str: string representation of the rectangle to be able to \
+                recreate a new instance by using eval()
+        """
         return "Rectangle({}, {})".format(self.__width, self.__height)
