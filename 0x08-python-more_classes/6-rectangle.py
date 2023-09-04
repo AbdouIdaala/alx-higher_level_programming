@@ -110,7 +110,6 @@ class Rectangle:
             str: string representation of the rectangle to be able to \
                 recreate a new instance by using eval()
         """
-        # Rectangle.number_of_instances += 1
         return f"{self.__class__.__name__}({self.__width}, {self.__height})"
 
     def __del__(self):
