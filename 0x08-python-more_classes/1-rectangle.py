@@ -8,11 +8,11 @@ class Rectangle:
     """
 
     def __init__(self, width=0, height=0):
-        """_summary_
+        """Instantiation
 
         Args:
-            width (int, optional): _description_. Defaults to 0.
-            height (int, optional): _description_. Defaults to 0.
+            width (int, optional): Defaults to 0.
+            height (int, optional): Defaults to 0.
         """
         self.__width = width
         self.__height = height
@@ -20,23 +20,21 @@ class Rectangle:
 
     @property
     def width(self):
-        """_summary_
-
-        Returns:
-            _type_: _description_
+        """Returns:
+            int: width
         """
         return self.__width
 
     @width.setter
     def width(self, value):
-        """_summary_
+        """Check width value
 
         Args:
-            value (_type_): _description_
+            value (int): width value
 
         Raises:
-            TypeError: _description_
-            ValueError: _description_
+            TypeError: width must be an integer
+            ValueError: width < 0
         """
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
@@ -46,23 +44,21 @@ class Rectangle:
 
     @property
     def height(self):
-        """_summary_
-
-        Returns:
-            _type_: _description_
+        """Returns:
+            int: height
         """
         return self.__height
 
     @height.setter
     def height(self, value):
-        """_summary_
+        """Check height value
 
         Args:
-            value (_type_): _description_
+            value (int): height value
 
         Raises:
-            TypeError: _description_
-            ValueError: _description_
+            TypeError: height must be an integer
+            ValueError: height < 0
         """
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
