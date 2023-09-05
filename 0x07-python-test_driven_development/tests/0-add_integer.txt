@@ -3,10 +3,6 @@
     >>> add_integer(1)
     99
 
-    >>> add_integer("s")
-    Traceback (most recent call last):
-    TypeError: a must be an integer
-
     >>> add_integer(None)
     Traceback (most recent call last):
     TypeError: a must be an integer
@@ -18,9 +14,21 @@
     >>> add_integer(1, 2)
     3
 
+    >>> add_integer("1")
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
     >>> add_integer(1, "1")
     Traceback (most recent call last):
     TypeError: b must be an integer
+
+    >>> add_integer("1", 1)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    >>> add_integer("1", "1")
+    Traceback (most recent call last):
+    TypeError: a must be an integer
 
     >>> add_integer(-1)
     97
@@ -30,3 +38,9 @@
 
     >>> add_integer(1.9999999999999999)
     100
+
+    >>> add_integer(1.23, -1)
+    0
+
+    >>> type(add_integer(1))
+    <class 'int'>
