@@ -1,6 +1,4 @@
     >>> text_indentation = __import__('5-text_indentation').text_indentation
 
-    >>> text_indentation("Hello World. I'm here")
-    Hello World.\n
-
-    I'm here
+    >>> text_indentation("Holberton School")
+    Holberton School
