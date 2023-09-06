@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""_summary_
+"""
+
 
 def add_integer(a, b=98):
     """Returns an the addition of (a + b)
