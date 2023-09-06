@@ -33,13 +33,16 @@ def matrix_divided(matrix, div):
                 for n in element:
                     if not isinstance(n, (int, float)):
                         raise TypeError(
-                            "matrix must be a matrix (list of lists) of integers/floats")
+                            "matrix must be a matrix (list of lists) \
+                                of integers/floats")
             else:
                 raise TypeError(
-                    "matrix must be a matrix (list of lists) of integers/floats")
+                    "matrix must be a matrix (list of lists) \
+                        of integers/floats")
     else:
         raise TypeError(
-            "matrix must be a matrix (list of lists) of integers/floats")
+            "matrix must be a matrix (list of lists) \
+                of integers/floats")
     copy_matrix = [[float("{:.2f}".format((n / div)))
                     for n in row] for row in matrix]
     return copy_matrix
