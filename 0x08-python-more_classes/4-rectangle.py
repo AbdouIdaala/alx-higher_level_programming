@@ -14,6 +14,14 @@ class Rectangle:
             width (int, optional): Defaults to 0.
             height (int, optional): Defaults to 0.
         """
+        if not isinstance(width, int):
+            raise TypeError("width must be an integer")
+        if width < 0:
+            raise ValueError("width must be >= 0")
+        if not isinstance(height, int):
+            raise TypeError("height must be an integer")
+        if height < 0:
+            raise ValueError("height must be >= 0")
         self.__width = width
         self.__height = height
         pass
@@ -98,7 +106,8 @@ class Rectangle:
             for i in range(self.__height):
                 for j in range(self.__width):
                     full_str += '#'
-                full_str += '\n'
+                if i < self.__height - 1:
+                    full_str += '\n'
         return full_str
 
     def __repr__(self):
