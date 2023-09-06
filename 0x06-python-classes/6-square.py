@@ -21,6 +21,8 @@ class Square:
             if len(position) == 2:
                 if not (type(position[0]) is int and type(position[1]) is int):
                     raise TypeError(err_msg)
+                if position[0] < 0 or position[1] < 0:
+                    raise TypeError(err_msg)
             else:
                 raise TypeError(err_msg)
         else:
@@ -65,6 +67,8 @@ class Square:
         if isinstance(value, tuple):
             if len(value) == 2:
                 if not (type(value[0]) is int and type(value[1]) is int):
+                    raise TypeError(err_msg)
+                if value[0] < 0 or value[1] < 0:
                     raise TypeError(err_msg)
             else:
                 raise TypeError(err_msg)
