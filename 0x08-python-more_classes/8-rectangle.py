@@ -130,13 +130,29 @@ class Rectangle:
 
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
+        """Compare rectangles
+
+        Args:
+            rect_1 (int): _description_
+            rect_2 (int): _description_
+
+        Raises:
+            TypeError: _description_
+            TypeError: _description_
+
+        Returns:
+            _type_: _description_
+        """
         if not isinstance(rect_1, Rectangle):
             raise TypeError("rect_1 must be an instance of Rectangle")
         if not isinstance(rect_2, Rectangle):
             raise TypeError("rect_2 must be an instance of Rectangle")
-        if rect_1.__width >= rect_2.__width and rect_1.__height >= rect_2.__height:
+        if rect_1.area() >= rect_2.area():
             return rect_1
-        elif rect_1.__width > rect_2.__width and rect_1.__height < rect_2.__height:
-            return rect_1
-        elif rect_1.__width < rect_2.__width and rect_1.__height > rect_2.__height:
-            return rect_2
+
+        # if rect_1.__width >= rect_2.__width and rect_1.__height >= rect_2.__height:
+        #     return rect_1
+        # elif rect_1.__width > rect_2.__width and rect_1.__height < rect_2.__height:
+        #     return rect_1
+        # elif rect_1.__width < rect_2.__width and rect_1.__height > rect_2.__height:
+        return rect_2
