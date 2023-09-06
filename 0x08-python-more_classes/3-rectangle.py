@@ -101,7 +101,7 @@ class Rectangle:
         """
         full_str = ""
         if not self.__width or not self.__height:
-            return full_str
+            return ''
         else:
             for i in range(self.__height):
                 for j in range(self.__width):
