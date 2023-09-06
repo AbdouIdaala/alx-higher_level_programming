@@ -8,8 +8,8 @@
 
     School
 
-    >>> text_indentation("Holberton.:")
-    Holberton.
+    >>> text_indentation("Holberton:School")
+    Holberton:
 
-    :
-    
+    School
+
