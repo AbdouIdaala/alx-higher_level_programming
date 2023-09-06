@@ -7,3 +7,6 @@
     Holberton.
 
     School
+
+    >>> text_indentation("Holberton.")
+    Holberton.
