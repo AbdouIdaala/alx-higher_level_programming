@@ -51,7 +51,7 @@ class Square:
         err_msg = "position must be a tuple of 2 positive integers"
         if isinstance(value, tuple):
             if len(value) == 2:
-                if type(value[0]) is not int and type(value[1]) is not int:
+                if not isinstance(value[0], int) and not isinstance(value[1], int):
                     raise TypeError(err_msg)
             else:
                 raise TypeError(err_msg)
