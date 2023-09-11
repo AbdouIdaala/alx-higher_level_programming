@@ -19,5 +19,4 @@ class MyList(list):
         Returns:
             None
         """
-        new_list = sorted(self)
-        print(new_list)
+        print(sorted(self))
