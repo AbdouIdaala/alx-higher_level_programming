@@ -13,7 +13,7 @@ class MyList(list):
     def print_sorted(self):
         """_summary_
         """
-        self.new_list = []
-        self.new_list.extend(self)
-        self.new_list.sort()
-        print(self.new_list)
+        new_list = []
+        new_list.extend(self)
+        new_list.sort()
+        print(new_list)
