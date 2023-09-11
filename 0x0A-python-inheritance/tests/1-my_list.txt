@@ -29,3 +29,8 @@
 
     >>> my_list.print_sorted()
     [-1, 0, 1, 2, 3]
+
+    >>> my_list.append(float('inf'))
+
+    >>> print(my_list)
+    [1, 3, 2, -1, 0, inf]
