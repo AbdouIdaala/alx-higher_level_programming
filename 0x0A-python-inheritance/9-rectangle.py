@@ -39,4 +39,4 @@ class Rectangle(BaseGeometry):
         Returns:
             _type_: _description_
         """
-        return f"[{self.__class__.__name__}] {self.__width}/{self.__height}"
+        return f"[Rectangle] {self.__width}/{self.__height}"
