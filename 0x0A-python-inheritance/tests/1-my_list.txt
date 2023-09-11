@@ -19,3 +19,11 @@
 
     >>> print(my_list)
     [1, 2, -1]
+
+    >>> my_list.append(0)
+
+    >>> print(my_list)
+    [1, 2, -1, 0]
+
+    >>> my_list.print_sorted()
+    [-1, 0, 1, 2]
