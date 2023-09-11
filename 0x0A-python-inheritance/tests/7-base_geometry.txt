@@ -19,6 +19,6 @@
     Traceback (most recent call last):
     TypeError: test must be an integer
 
-    >>> bg.integer_validator("test", float('nan'))
+    >>> bg.integer_validator("test", float('inf'))
     Traceback (most recent call last):
     TypeError: test must be an integer
