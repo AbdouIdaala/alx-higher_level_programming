@@ -10,9 +10,6 @@ class MyList(list):
         list (_type_): _description_
     """
 
-    def __init__(self):
-        super().__init__()
-
     def print_sorted(self):
         """_summary_
         """
