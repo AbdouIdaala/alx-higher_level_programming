@@ -1,19 +1,23 @@
 #!/usr/bin/python3
-"""My list
+"""My custom list class
 """
 
 
 class MyList(list):
-    """_summary_
+    """A custom list class that extends the built-in list class.
 
     Args:
-        list (_type_): _description_
+        list (list): The initial list.
     """
 
     def print_sorted(self):
-        """_summary_
+        """Prints the elements of the list in ascending order.
+
+        Args:
+            None
+
+        Returns:
+            None
         """
-        new_list = []
-        new_list.extend(self)
-        new_list.sort()
+        new_list = sorted(self)
         print(new_list)
