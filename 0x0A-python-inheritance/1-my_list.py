@@ -4,6 +4,12 @@
 
 
 class MyList(list):
+    """_summary_
+
+    Args:
+        list (_type_): _description_
+    """
+
     def __init__(self):
         super().__init__()
 
