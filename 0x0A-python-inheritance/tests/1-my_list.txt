@@ -38,3 +38,5 @@
 
     >>> my_list.print_sorted()
     [-1, 0, 1, 2, 3, 9]
+
+    >>> my_list.append('1')
