@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""import module
+"""
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 """_summary_
 """
