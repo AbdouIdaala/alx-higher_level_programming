@@ -10,4 +10,4 @@ def from_json_string(my_str):
     Args:
         my_str (_type_): _description_
     """
-    return my_str
+    return str(my_str)
