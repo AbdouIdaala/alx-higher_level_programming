@@ -10,4 +10,4 @@ def to_json_string(my_obj):
     Args:
         my_obj (_type_): _description_
     """
-    pass
+    return json.dumps(my_obj)
