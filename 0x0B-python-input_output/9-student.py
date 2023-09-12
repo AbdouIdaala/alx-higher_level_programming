@@ -13,4 +13,4 @@ class Student:
         self.age = age
 
     def to_json(self):
-        pass
+        return self
