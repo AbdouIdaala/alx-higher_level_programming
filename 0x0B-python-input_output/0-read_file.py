@@ -10,6 +10,4 @@ def read_file(filename=""):
         filename (str, optional): _description_. Defaults to "".
     """
     with open(filename, mode='r', encoding='UTF-8') as f:
-        """_summary_
-        """
         f.read()
