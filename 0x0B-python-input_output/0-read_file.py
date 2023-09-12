@@ -11,3 +11,4 @@ def read_file(filename=""):
     """
     with open(filename) as f:
         f.read()
+    f.close
